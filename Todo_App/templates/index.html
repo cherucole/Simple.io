@@ -11,6 +11,14 @@
 <body>
 
     <h1>This is sample content</h1>
+    by {{name}}
+
+    <p>You have {{length}} things to do</p>
+
+    {% for item in list_items%}
+
+    <li> <a href="/details/item/{{item.id}}"> {{item.title}}</a></li>
+    {% endfor%}
 
 </body>
 
