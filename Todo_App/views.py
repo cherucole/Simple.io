@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from .models import *
 
@@ -22,3 +22,23 @@ def item(request, id):
         'name': 'cherucole'
     }
     return render(request, 'details.html', context)
+
+
+def item_delete(request, id):
+    item = get_object_or_404(Item, id=id)
+    item.delete()
+    return redirect('homepage')
+
+
+def add_item(request):
+    if(request.method == 'POST'):
+        title = request.POST['title']
+        body = request.POST['body']
+
+        item = Item(title=title, body=body)
+        item.save()
+
+        return redirect('homepage')
+
+    else:
+        return render(request, 'add.html')

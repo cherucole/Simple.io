@@ -17,8 +17,10 @@
 
     {% for item in list_items%}
 
-    <li> <a href="/details/item/{{item.id}}"> {{item.title}}</a></li>
+    <li> <a href="/item/{{item.id}}"> {{item.title}}</a></li>
     {% endfor%}
+
+    <a href="{% url 'add_item' %}"> Add Items</a>
 
 </body>
 

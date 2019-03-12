@@ -1,2 +1,12 @@
 {{list_item.body}}
+<br>
 belongs to {{name}}
+<br>
+created at {{list_item.time}}
+
+<br>
+
+<a href="{% url 'delete_item' id=list_item.id %}">Delete Item</a>
+
+
+<a href="/"> Go Back</a>
