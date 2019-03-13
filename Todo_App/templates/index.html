@@ -20,7 +20,7 @@
     by {{name}}
 
     <p>You have {{length}} things to do</p>
-    <a class="menu" id="signup" href="{% url 'items:add_item' %}">Add Items</a>
+    <a class="menu" id="add_item" href="{% url 'items:add_item' %}">Add Items</a>
 
 
     {% for item in list_items%}

@@ -1,18 +1,43 @@
-{{list_item.body}}
-<br>
-belongs to {{name}}
-<br>
-created at {{list_item.time}}
+{% load staticfiles %}
 
-<br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>{{list_item.title}}</h1>
+
+    <br>
+    <hr>
+    <h3> {{list_item.body}}</h3>
+
+    <br>
+    <p> by {{name}}
+    </p>
+    <br>
+    <p> created on {{list_item.time}}</p>
+
+
+    <br>
 
 
 
-<br><br><br>
-<form action="{% url 'items:todo_delete' list_item.id %}" method="post">
-    {% csrf_token %}
-    <input type="submit" value="Delete item">
-</form>
+    <br><br><br>
+    <form action="{% url 'items:todo_delete' list_item.id %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Delete item">
+    </form>
 
 
-<a href="/"> Go Back</a>
+    <a href="/"> Go Back</a>
+</body>
+
+</html>
