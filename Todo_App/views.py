@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from .models import *
+from django.contrib import messages
 
 
 def homepage(request):
@@ -50,3 +51,20 @@ def todo_delete(request, id):
 
     return render(request, 'details.html', {'list_item': item})
     # If method is not POST, render the default template.
+
+
+# def edit_item(request, id):
+#     if request.method == 'POST':
+#         item = Item.objects.get(id=id)
+
+#         form = form(request.POST or None, instance=item)
+
+#         if form.is_valid():
+#             form.save()
+
+#             messages.success(request, ('Item has been Updated'))
+#             return redirect('/')
+
+#     else:
+#         item = Item.objects.get(id=id)
+#         return render(request, 'details.html', {'list_item': item})
