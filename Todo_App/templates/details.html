@@ -6,15 +6,12 @@ created at {{list_item.time}}
 
 <br>
 
-<form action="{% url 'items:item_delete' list_item.id %}" method="post">
-    {% csrf_token %}
-    <input type="submit" value="Delete Item">
-</form>
+
 
 <br><br><br>
 <form action="{% url 'items:todo_delete' list_item.id %}" method="post">
     {% csrf_token %}
-    <input type="submit" value="Delete cat">
+    <input type="submit" value="Delete item">
 </form>
 
 
