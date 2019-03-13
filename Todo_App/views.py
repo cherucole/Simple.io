@@ -26,8 +26,10 @@ def item(request, id):
 
 def item_delete(request, id):
     item = get_object_or_404(Item, id=id)
-    item.delete()
-    return redirect('homepage')
+    if request.method == 'POST':
+        item.delete()
+        return redirect('/')
+    return render(request, 'index.html', {'list_item': item})
 
 
 def add_item(request):
@@ -38,7 +40,19 @@ def add_item(request):
         item = Item(title=title, body=body)
         item.save()
 
-        return redirect('homepage')
+        return redirect('items:homepage')
 
     else:
         return render(request, 'add.html')
+
+
+def todo_delete(request, pk):
+    item = get_object_or_404(Item, pk=pk)  # Get your current cat
+
+    if request.method == 'POST':         # If method is POST,
+        item.delete()                     # delete the cat.
+        return redirect('/')             # Finally, redirect to the homepage.
+
+    return render(request, 'details.html', {'item': item})
+    # If method is not POST, render the default template.
+    # *Note*: Replace 'template_name.html' with your corresponding template name.
