@@ -34,21 +34,20 @@
 
 
 
-        <br><br><br>
-
-
         <br>
 
+        <div>
+            <a class="menu" id="add_item" href="{% url 'items:homepage' %}">Go Back</a>
 
-        <a class="menu" id="add_item" href="{% url 'items:homepage' %}">Go Back</a>
+            <!-- <br> -->
 
-        <br>
-
-        <form action="{% url 'items:todo_delete' list_item.id %}" method="post">
-            {% csrf_token %}
-            <input id="delete_button" type="submit" value="Delete">
-        </form>
+            <form action="{% url 'items:todo_delete' list_item.id %}" method="post">
+                {% csrf_token %}
+                <input id="delete_button" type="submit" value="Delete Task">
+            </form>
+        </div>
     </div>
+
 </body>
 
 </html>

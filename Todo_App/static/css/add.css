@@ -2,9 +2,25 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* div {
-    display: inline-block;
-} */
+#title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: black;
+    text-align: left;
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+#body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: black;
+    text-align: left;
+    width: 100%;
+    border-radius: 7px;
+    height: 100px;
+}
 
 
 #delete_button {
@@ -22,7 +38,7 @@ html {
     line-height: 45px;
     text-align: center;
     font-weight: 500;
-    float: right;
+    float: left;
 }
 
 #delete_button:hover {
@@ -37,7 +53,7 @@ html {
     /* text-align: center; */
 }
 
-#title {
+#heading {
     font-family: 'Sniglet', cursive;
     font-size: 50px;
     color: white;
@@ -63,7 +79,7 @@ h3 {
     line-height: 45px;
     text-align: center;
     font-weight: 500;
-    float: left;
+    float: right;
 }
 
 #add_item:hover {

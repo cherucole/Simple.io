@@ -1,4 +1,79 @@
-<form action="{% url 'items:add_item' %}" method="POST">
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/add.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Add tasks</h1>
+
+
+
+    <div class="details">
+        <hr>
+
+        <form action="{% url 'items:add_item' %}" method="POST">
+            {% csrf_token%}
+            <!-- <label for="title">Title</label> -->
+            <br>
+
+            <input type="text" name="title" id="title" placeholder="Enter title..." required>
+            <br>
+            <br>
+
+
+            <!-- <label for="body">Item Description</label> -->
+            <br>
+            <textarea name="body" id="body" placeholder="Description" required></textarea>
+            <br><br>
+            <input id="delete_button" type="submit" value="Submit task">
+
+        </form>
+        <br>
+        <a class="menu" id="add_item" href="{% url 'items:homepage' %}">Go Back</a>
+
+
+        <br>
+
+
+
+        <br>
+
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form action="{% url 'items:add_item' %}" method="POST">
     {% csrf_token%}
     <label for="title">Title</label>
     <br>
@@ -12,6 +87,4 @@
 
 
 
-</form>
-
-<a href="/"> Go Back</a>
+</form> -->
