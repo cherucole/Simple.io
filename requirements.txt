@@ -1,7 +1,9 @@
 certifi==2019.3.9
 chardet==3.0.4
+confusable-homoglyphs==3.2.0
 defusedxml==0.5.0
 Django==1.11
+django-registration==2.4.1
 idna==2.8
 oauthlib==3.0.1
 psycopg2==2.7.7
