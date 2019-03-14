@@ -14,8 +14,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOCIAL_AUTH_FACEBOOK_KEY = '565645297209009'  # App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = 'ef17014116609700175398a315fbd085'  # App Secret
 
-SOCIAL_AUTH_TWITTER_KEY = '4GnrNUoFZd38SepfDbn41fDp6'
-SOCIAL_AUTH_TWITTER_SECRET = 'G2EbHVNsgYCOMNDuyOAqdaRet9KxdzZsXv1kqtL11aqi5l3y7B'
+SOCIAL_AUTH_TWITTER_KEY = 'yuXnFI1SxBNTJXozhKUmKOwbz'
+SOCIAL_AUTH_TWITTER_SECRET = 'MWQtUaquEhOqYPx90PRY5Lt9keGIEyQy4S39E8o2dhEmkouMWU'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
