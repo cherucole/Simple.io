@@ -1,4 +1,8 @@
 import os
+import django_heroku
+import dj_database_url
+from decouple import config, Csv
+
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 # make sure to add the name before semicolon. This is the app name assigned in urls.py file in app
@@ -19,9 +23,34 @@ SOCIAL_AUTH_TWITTER_SECRET = 'G2EbHVNsgYCOMNDuyOAqdaRet9KxdzZsXv1kqtL11aqi5l3y7B
 SECRET_KEY = '1qztgd%m=sviul$^9ua22-xhea^ecw0!83y6n&nslo*290#bm-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+MODE = config("MODE", default="dev")
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
+# development
+if config('MODE') == "dev":
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': config('DB_NAME'),
+            'USER': config('DB_USER'),
+            'PASSWORD': config('DB_PASSWORD'),
+            'HOST': config('DB_HOST'),
+            'PORT': '',
+        }
 
-ALLOWED_HOSTS = []
+    }
+# production
+else:
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=config('DATABASE_URL')
+        )
+    }
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+
 
 
 # Application definition
