@@ -19,7 +19,7 @@ SOCIAL_AUTH_TWITTER_SECRET = 'G2EbHVNsgYCOMNDuyOAqdaRet9KxdzZsXv1kqtL11aqi5l3y7B
 SECRET_KEY = '1qztgd%m=sviul$^9ua22-xhea^ecw0!83y6n&nslo*290#bm-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
