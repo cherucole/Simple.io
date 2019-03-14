@@ -27,7 +27,6 @@
         <br>
         <p> by {{name}}
         </p>
-        <br>
         <p> created on {{list_item.time}}</p>
 
 
@@ -36,12 +35,19 @@
 
 
         <br><br><br>
-        <form action="{% url 'items:todo_delete' list_item.id %}" method="post">
-            {% csrf_token %}
-            <input type="submit" value="Delete item">
-        </form>
+
+
+        <br>
+
 
         <a class="menu" id="add_item" href="{% url 'items:homepage' %}">Go Back</a>
+
+        <br>
+
+        <form action="{% url 'items:todo_delete' list_item.id %}" method="post">
+            {% csrf_token %}
+            <input id="delete_button" type="submit" value="Delete">
+        </form>
     </div>
 </body>
 
