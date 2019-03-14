@@ -20,13 +20,19 @@
 
 
         <div class="card">
-            <div class="container">
-                <a href="{% url 'social:begin' 'facebook' %}"><img src="{% static 'images/facebook.png' %}" style="height:65px;width:100%;"></a>
 
-                <a href="{% url 'social:begin' 'twitter' %}"><img src="
-        {% static 'img/twitter.png' %}" style="height:41px;width:100%;margin-top: 12px;padding-right:2px;"></a>
+            <a class="menu" id="facebook" href="{% url 'social:begin' 'facebook' %}">
+                Facebook Login
+            </a>
 
-            </div>
+            <br>
+
+            <a class="menu" id="twitter" href="{% url 'social:begin' 'twitter' %}">
+                Twitter Login
+            </a>
+
+
+
         </div>
     </div>
 

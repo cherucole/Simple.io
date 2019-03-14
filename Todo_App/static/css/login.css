@@ -9,29 +9,54 @@ html {
     justify-content: center;
 }
 
-#delete_button {
+#facebook {
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: blue;
     border: 2px solid #ffffff;
     border-radius: 50px;
-    width: 160px;
+    width: 170px;
     height: 45px;
     margin: 0 auto;
     padding: 0;
-    margin-right: 60px;
+    margin-top: 60px;
     display: inline-block;
     line-height: 45px;
     text-align: center;
     font-weight: 500;
-    float: right;
+    margin-left: 15%;
 }
 
-#delete_button:hover {
+#twitter {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    width: 170px;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 60px;
+    display: inline-block;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    margin-left: 15%;
+}
+
+#facebook:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.3s;
 }
+
+#twitter:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 
 
 
@@ -46,42 +71,18 @@ h3 {
     font-size: 28px;
 }
 
-#add_item {
-    text-decoration: none;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    width: 160px;
-    /* width: 25vw;  for responsive phone display*/
-    height: 45px;
-    margin: 0 auto;
-    padding: 0;
-    /* margin-right: 60px; */
-    display: inline-block;
-    line-height: 45px;
-    text-align: center;
-    font-weight: 500;
-    float: left;
-}
 
-#add_item:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-    transition: 0.3s;
-}
+
+
 
 .card {
     margin-top: 20vh;
-    /* margin-left: 20%; */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
     transition: 0.3s;
     width: 40vh;
     border-radius: 5px;
-    text-align: center;
     height: 40vh;
     border: 2px solid white;
-
-    /* background-image: linear-gradient(to right, #50aaf4, #5ea9f2, #69a9f0, #73a8ed, #7ca8eb, #84a2eb, #8d9cea, #9796e7, #ab86df, #c172d0, #d55bba, #e53f9d); */
 }
 
 /* .card:hover {
