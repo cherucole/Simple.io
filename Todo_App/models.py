@@ -16,7 +16,7 @@ class Item(models.Model):
 
     @classmethod
     def get_user_items(cls, profile):
-        items = Item.objects.filter(user__pk=profile)
+        items = Item.objects.filter(owner__pk=profile)
         return items
 
 
