@@ -65,4 +65,4 @@ def profilehistory(request, username):
     list_items = Item.get_user_items(profile.id)
     z = len(list_items)
 
-    return render(request, 'test.html', {'profile': profile, 'items': list_items, 'profile_details': profile_details, 'len':z})
+    return render(request, 'test.html', {'profile': profile, 'list_items': list_items, 'profile_details': profile_details, 'len':z})
