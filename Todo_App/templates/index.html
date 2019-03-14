@@ -4,10 +4,9 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,12 +15,15 @@
 
 <body>
 
-    <h1>This is sample content</h1>
+    <h1 id="logo">Simple.io</h1>
+    <h1 id="tagline">Prioritizing tasks made simple...</h1>
     by {{name}}
 
     <p>You have {{length}} things to do</p>
     <a class="menu" id="add_item" href="{% url 'items:add_item' %}">Add Items</a>
 
+
+    <img src="{% static  'img/test.svg' %}" alt="My image">
 
     {% for item in list_items%}
 
