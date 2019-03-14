@@ -6,7 +6,13 @@ from django.contrib import messages
 
 
 def homepage(request):
+    # profile = User.objects.get(username=username)
+    # try:
+    #     profile_details = Profile.get_by_id(profile.id)
+    # except:
+    #     profile_details = Profile.filter_by_id(profile.id)
     items = Item.objects.all()
+    # items = Item.objects.all()
     number = len(items)
 
     context = {
@@ -28,12 +34,14 @@ def item(request, id):
 
 @login_required(login_url='/login/')
 def add_item(request):
-    if(request.method == 'POST'):
+    current_user = request.user
 
+    if(request.method == 'POST'):
+        owner = current_user
         title = request.POST['title']
         body = request.POST['body']
 
-        item = Item(title=title, body=body)
+        item = Item(owner=owner, title=title, body=body)
         item.save()
 
         return redirect('items:homepage')
@@ -54,18 +62,12 @@ def todo_delete(request, id):
     # If method is not POST, render the default template.
 
 
-# def edit_item(request, id):
-#     if request.method == 'POST':
-#         item = Item.objects.get(id=id)
+def profilehistory(request, username):
+    profile = User.objects.get(username=username)
+    try:
+        profile_details = Profile.get_by_id(profile.id)
+    except:
+        profile_details = Profile.filter_by_id(profile.id)
+    items = Item.get_user_items(profile.id)
 
-#         form = form(request.POST or None, instance=item)
-
-#         if form.is_valid():
-#             form.save()
-
-#             messages.success(request, ('Item has been Updated'))
-#             return redirect('/')
-
-#     else:
-#         item = Item.objects.get(id=id)
-#         return render(request, 'details.html', {'list_item': item})
+    return render(request, 'test.html', {'title': title, 'profile': profile, 'items': items, 'profile_details': profile_details})

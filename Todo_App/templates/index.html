@@ -21,10 +21,9 @@
 <body>
 
     <h1 id="logo">Simple.io</h1>
-    <h1 id="tagline">Prioritizing tasks made simple...</h1>
-    <!-- by {{name}} -->
+    <h1 id="tagline">Prioritizing tasks made simple...</h1>{{user.username}} Id: {{user.id}}
 
-    <h2 id="reminder">You have {{length}} things to do</h2>
+    <h2 id="reminder">{{ user.username | title}}, you have {{length}} things to do</h2>
     <a class="menu" id="add_item" href="{% url 'items:add_item' %}"><i class="fas fa-plus"></i> <span></span> Add Items</a>
 
     <div class="mainSection">
@@ -39,7 +38,7 @@
                 <div class="card">
                     <div class="container">
                         <h3><b>{{item.title}}</b></h3>
-                        <p>{{item.body}}</p>
+                        <p>{{item.body}}</p>{{item.owner.id}}{{item.owner}}
                         <p>{{item.time | date}}</p>
                     </div>
                 </div>
