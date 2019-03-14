@@ -2,6 +2,23 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+.details {
+    margin-left: 5%;
+    width: 80%;
+    /* text-align: center; */
+}
+
+#title {
+    font-family: 'Sniglet', cursive;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+}
+
 #add_item {
     text-decoration: none;
     color: #ffffff;

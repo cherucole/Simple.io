@@ -17,36 +17,31 @@
 
     <h1 id="logo">Simple.io</h1>
     <h1 id="tagline">Prioritizing tasks made simple...</h1>
-    by {{name}}
+    <!-- by {{name}} -->
 
-    <p>You have {{length}} things to do</p>
+    <h2 id="reminder">You have {{length}} things to do</h2>
     <a class="menu" id="add_item" href="{% url 'items:add_item' %}">Add Items</a>
 
+    <div class="mainSection">
 
-    <img src="{% static  'img/test.svg' %}" alt="My image">
-
-    {% for item in list_items%}
-
-
-    <a href="/item/{{item.id}}">
-        <div class="card">
-            <div class="container">
-
-                <h3><b>{{item.title}}</b></h3>
-
-                <p>{{item.body}}</p>
-                <p>{{item.time | date}}</p>
-
-
-            </div>
+        <div id="todoImage">
+            <img src="{% static  'img/test.svg' %}" alt="templates">
         </div>
-    </a>
 
-
-
-
-    {% endfor%}
-
+        <div id="tasksList">
+            {% for item in list_items%}
+            <a href="/item/{{item.id}}">
+                <div class="card">
+                    <div class="container">
+                        <h3><b>{{item.title}}</b></h3>
+                        <p>{{item.body}}</p>
+                        <p>{{item.time | date}}</p>
+                    </div>
+                </div>
+            </a>
+            {% endfor%}
+        </div>
+    </div>
 
 </body>
 
