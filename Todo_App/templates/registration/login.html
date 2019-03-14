@@ -1,8 +1,35 @@
-{% load static%}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="{% static  'img/icon.ico' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple.io | Login</title>
+</head>
+
+<body>
+    <div class="container">
 
 
-<a href="{% url 'social:begin' 'facebook' %}"><img src="{% static 'images/facebook.png' %}" style="height:65px;width:100%;"></a>
+        <div class="card">
+            <div class="container">
+                <a href="{% url 'social:begin' 'facebook' %}"><img src="{% static 'images/facebook.png' %}" style="height:65px;width:100%;"></a>
 
+                <a href="{% url 'social:begin' 'twitter' %}"><img src="
+        {% static 'img/twitter.png' %}" style="height:41px;width:100%;margin-top: 12px;padding-right:2px;"></a>
 
-<a href="{% url 'social:begin' 'twitter' %}"><img src="
-{% static 'img/twitter.png' %}" style="height:41px;width:100%;margin-top: 12px;padding-right:2px;"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

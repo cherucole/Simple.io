@@ -1,0 +1,114 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#delete_button {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    width: 160px;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    margin-right: 60px;
+    display: inline-block;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    float: right;
+}
+
+#delete_button:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+
+#title {
+    font-family: 'Sniglet', cursive;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+#add_item {
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    width: 160px;
+    /* width: 25vw;  for responsive phone display*/
+    height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    /* margin-right: 60px; */
+    display: inline-block;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    float: left;
+}
+
+#add_item:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card {
+    margin-top: 20vh;
+    /* margin-left: 20%; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    width: 40vh;
+    border-radius: 5px;
+    text-align: center;
+    height: 40vh;
+    border: 2px solid white;
+
+    /* background-image: linear-gradient(to right, #50aaf4, #5ea9f2, #69a9f0, #73a8ed, #7ca8eb, #84a2eb, #8d9cea, #9796e7, #ab86df, #c172d0, #d55bba, #e53f9d); */
+}
+
+/* .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+} */
+
+body {
+    background-image: linear-gradient(to right, #e53f9d, #d55bba, #c172d0, #ab86df, #9796e7, #8a9eea, #7fa5ec, #76aceb, #69afee, #59b2f0, #46b5f1, #2db8f1);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1,
+h3 {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: grey;
+    color: white;
+
+
+}

@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from .models import *
 from django.contrib import messages
@@ -25,7 +26,7 @@ def item(request, id):
     }
     return render(request, 'details.html', context)
 
-
+@login_required(login_url='/login/')
 def add_item(request):
     if(request.method == 'POST'):
 
@@ -40,7 +41,7 @@ def add_item(request):
     else:
         return render(request, 'add.html')
 
-
+@login_required(login_url='/login/')
 def todo_delete(request, id):
     item = get_object_or_404(Item, id=id)  # Get your current item
 
