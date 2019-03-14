@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from .models import *
 from django.contrib import messages
 
-
+@login_required(login_url='/login/')
 def homepage(request):
     username = request.user
     profile = User.objects.get(username=username)
@@ -33,7 +33,6 @@ def item(request, id):
     }
     return render(request, 'details.html', context)
 
-@login_required(login_url='/login/')
 def add_item(request):
     current_user = request.user
 
@@ -50,7 +49,6 @@ def add_item(request):
     else:
         return render(request, 'add.html')
 
-@login_required(login_url='/login/')
 def todo_delete(request, id):
     item = get_object_or_404(Item, id=id)  # Get your current item
 
