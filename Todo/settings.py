@@ -1,12 +1,17 @@
 import os
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
-LOGIN_REDIRECT_URL = 'items:homepage'  #make sure to add the name before semicolon. This is the app name assigned in urls.py file in app
+# make sure to add the name before semicolon. This is the app name assigned in urls.py file in app
+LOGIN_REDIRECT_URL = 'items:homepage'
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+SOCIAL_AUTH_FACEBOOK_KEY = '402663723878483'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = 'b7d4c06a3650d8c4adf13c1a8b2cc7e6'  # App Secret
 
+SOCIAL_AUTH_TWITTER_KEY = '4GnrNUoFZd38SepfDbn41fDp6'
+SOCIAL_AUTH_TWITTER_SECRET = 'G2EbHVNsgYCOMNDuyOAqdaRet9KxdzZsXv1kqtL11aqi5l3y7B'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
