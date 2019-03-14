@@ -4,7 +4,8 @@ html {
 
 #title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
+    height: 30px;
     color: black;
     text-align: left;
     width: 100%;
@@ -14,7 +15,7 @@ html {
 
 #body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     color: black;
     text-align: left;
     width: 100%;
