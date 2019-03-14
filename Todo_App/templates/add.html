@@ -4,6 +4,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="icon" href="{% static  'img/icon.ico' %}" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
@@ -41,7 +43,8 @@
             <input id="delete_button" type="submit" value="Submit task">
 
         </form>
-        <a class="menu" id="add_item" href="{% url 'items:homepage' %}">Go Back</a>
+        <a class="menu" id="go_back" href="{% url 'items:homepage' %}"><i class="fas fa-chevron-left"></i> <span></span>
+            Go Back</a>
 
 
         <br>

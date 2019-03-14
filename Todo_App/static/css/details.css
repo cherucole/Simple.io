@@ -48,7 +48,7 @@ h3 {
     font-size: 28px;
 }
 
-#add_item {
+#go_back {
     text-decoration: none;
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -66,9 +66,11 @@ h3 {
     float: left;
 }
 
-#add_item:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+#go_back:hover {
+    color: blue;
+    background-color: white;
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
     transition: 0.3s;
 }
 

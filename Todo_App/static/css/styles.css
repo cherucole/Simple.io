@@ -3,10 +3,6 @@ html {
 }
 
 
-/* #todoImage: img {
-    width: 90%;
-} */
-
 .mainSection {
     padding: 0 5%;
     margin-top: 2em;
@@ -52,8 +48,10 @@ html {
 }
 
 #add_item:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    color: blue !important;
+    background-color: white !important;
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
     transition: 0.3s;
 }
 
