@@ -6,7 +6,14 @@ from django.contrib import messages
 
 
 def homepage(request):
-    items = Item.objects.all()
+    username = request.user
+    profile = User.objects.get(username=username)
+    try:
+        profile_details = Profile.get_by_id(profile.id)
+    except:
+        profile_details = Profile.filter_by_id(profile.id)
+    items = Item.get_user_items(profile.id)
+    
     number = len(items)
 
     context = {
@@ -54,15 +61,3 @@ def todo_delete(request, id):
 
     return render(request, 'details.html', {'list_item': item})
     # If method is not POST, render the default template.
-
-
-def profilehistory(request, username):
-    profile = User.objects.get(username=username)
-    try:
-        profile_details = Profile.get_by_id(profile.id)
-    except:
-        profile_details = Profile.filter_by_id(profile.id)
-    list_items = Item.get_user_items(profile.id)
-    z = len(list_items)
-
-    return render(request, 'test.html', {'profile': profile, 'list_items': list_items, 'profile_details': profile_details, 'len':z})
