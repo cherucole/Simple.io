@@ -26,13 +26,13 @@
     <h2 id="reminder">{{ user.username | title}}, you have {{length}} things to do</h2>
     <a class="menu" id="add_item" href="{% url 'items:add_item' %}"><i class="fas fa-plus"></i> <span></span> Add Items</a>
 
-    <div class="mainSection">
+    <div class="row">
 
-        <div id="todoImage">
+        <div class="column">
             <img src="{% static  'img/test.svg' %}" alt="templates">
         </div>
 
-        <div id="tasksList">
+        <div class="column">
             {% for item in list_items%}
             <a href="/item/{{item.id}}">
                 <div class="card">
