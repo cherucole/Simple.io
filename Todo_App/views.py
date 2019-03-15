@@ -26,10 +26,12 @@ def homepage(request):
 
 def item(request, id):
     item = Item.objects.get(id=id)
+    username = request.user
+
 
     context = {
         'list_item': item,
-        'name': 'cherucole'
+        'name': username
     }
     return render(request, 'details.html', context)
 
