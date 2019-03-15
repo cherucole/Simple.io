@@ -34,7 +34,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Cheruiyot Collins** - *Full work* - [PurpleBooth](https://github.com/cherucole)
+* **Cheruiyot Collins** - *Full work* - [Cherucole](https://github.com/cherucole)
 
 
 ## License
@@ -42,4 +42,4 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-* **Cheruiyot Collins** - *Initial work* - [PurpleBooth](https://github.com/cherucole)
+* **Cheruiyot Collins** - *Initial work* - [Cherucole](https://github.com/cherucole)
