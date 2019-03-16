@@ -132,10 +132,13 @@ p {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #go_back {
-        width: 35%;
+        width: 40%;
+        margin: 0%;
+
     }
 
     #add_button {
         width: 40%;
+        margin: 0%;
     }
 }
