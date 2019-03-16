@@ -1,6 +1,6 @@
 # Simple.io
 
-![Simple.io](https://github.com/cherucole/My_Todo_List/blob/master/Todo_App/static/img/twitter.png?raw=true)
+![Simple.io](https://github.com/cherucole/My_Todo_List/blob/master/Todo_App/static/img/screenshot.png?raw=true)
 
 
 A beautiful app that allows you to add tasks, save, update or delete them. Only accessible by you
