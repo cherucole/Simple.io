@@ -20,8 +20,14 @@
 
 <body>
 
-    <h1 id="logo">Simple.io</h1>
+    <h1 id="logo"> <span> <a href="/logout"> <img id="logout" src="{% static  'img/logout.svg' %}" alt="Log out"></a></span>
+        Simple.io</h1>
     <h1 id="tagline">Prioritizing tasks made simple...</h1>
+
+    {% if user.is_authenticated %}
+    <a href="/logout">Log Out</a>
+    {% endif %}
+
 
     <h2 id="reminder">{{ user.username | title}}, you have {{length}} things to do!</h2>
     <a class="menu" id="add_item" href="{% url 'items:add_item' %}"><i class="fas fa-plus"></i> <span></span> Add Items</a>
