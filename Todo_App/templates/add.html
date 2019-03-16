@@ -21,22 +21,16 @@
 <body>
     <h1 id="heading">Add tasks</h1>
 
-
-
     <div class="details">
         <hr>
 
         <form action="{% url 'items:add_item' %}" method="POST">
             {% csrf_token%}
-            <!-- <label for="title">Title</label> -->
             <br>
 
             <input type="text" name="title" id="title" placeholder="Enter title..." required>
             <br>
             <br>
-
-
-            <!-- <label for="body">Item Description</label> -->
             <br>
             <textarea name="body" id="body" placeholder="Description" required></textarea>
             <br><br>
@@ -46,14 +40,8 @@
         <a class="menu" id="go_back" href="{% url 'items:homepage' %}"><i class="fas fa-chevron-left"></i> <span></span>
             Go Back</a>
 
-
         <br>
-
-
-
         <br>
-
-
     </div>
 
 </body>

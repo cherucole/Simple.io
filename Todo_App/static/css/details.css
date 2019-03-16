@@ -2,10 +2,6 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* div {
-    display: inline-block;
-} */
-
 
 #delete_button {
     font-size: 18px;
@@ -34,7 +30,6 @@ html {
 .details {
     margin-left: 5%;
     width: 80%;
-    /* text-align: center; */
 }
 
 #title {
@@ -54,11 +49,9 @@ h3 {
     border: 2px solid #ffffff;
     border-radius: 50px;
     width: 160px;
-    /* width: 25vw;  for responsive phone display*/
     height: 45px;
     margin: 0 auto;
     padding: 0;
-    /* margin-right: 60px; */
     display: inline-block;
     line-height: 45px;
     text-align: center;
@@ -82,8 +75,6 @@ h3 {
     margin: 1em;
     margin-left: 40%;
     border: 1px solid grey;
-
-    /* background-image: linear-gradient(to right, #50aaf4, #5ea9f2, #69a9f0, #73a8ed, #7ca8eb, #84a2eb, #8d9cea, #9796e7, #ab86df, #c172d0, #d55bba, #e53f9d); */
 }
 
 .card:hover {

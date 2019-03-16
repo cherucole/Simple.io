@@ -61,9 +61,6 @@ html {
     transition: 0.3s;
 }
 
-
-
-
 #title {
     font-family: 'Sniglet', cursive;
     font-size: 50px;
@@ -76,9 +73,6 @@ h3 {
 }
 
 
-
-
-
 .card {
     margin-top: 20vh;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
@@ -89,12 +83,6 @@ h3 {
     border: 1px solid white;
 }
 
-/* .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
-    border: 2px solid white;
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
-} */
 
 body {
     background-image: linear-gradient(to right, #e53f9d, #d55bba, #c172d0, #ab86df, #9796e7, #8a9eea, #7fa5ec, #76aceb, #69afee, #59b2f0, #46b5f1, #2db8f1);
@@ -114,6 +102,4 @@ h3 {
 p {
     color: grey;
     color: white;
-
-
 }
