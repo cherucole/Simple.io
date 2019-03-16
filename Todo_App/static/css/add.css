@@ -24,7 +24,7 @@ html {
 }
 
 
-#delete_button {
+#add_button {
     font-size: 18px;
     text-decoration: none;
     color: black;
@@ -42,7 +42,7 @@ html {
     float: left;
 }
 
-#delete_button:hover {
+#add_button:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.3s;
@@ -127,4 +127,15 @@ p {
 
 .container {
     padding: 2px 16px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #go_back {
+        width: 35%;
+    }
+
+    #add_button {
+        width: 40%;
+    }
 }
