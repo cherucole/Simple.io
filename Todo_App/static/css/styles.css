@@ -30,6 +30,11 @@ body {
     margin-right: 37vw;
 }
 
+#logout:hover {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
 #add_item {
     text-decoration: none;
     color: #ffffff;
