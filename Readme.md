@@ -3,7 +3,7 @@
 ![Simple.io](https://github.com/cherucole/My_Todo_List/blob/master/Todo_App/static/img/screenshot.png?raw=true)
 
 
-A beautiful app that allows you to add tasks, save, update or delete them. Only accessible by you by use of Login using either Facebook or Twitter to access your tasks.
+A Fully responsive beautiful app that allows you to add tasks, save, update or delete them. Only accessible by you by use of Login using either Facebook or Twitter to access your tasks.
 
 ## Getting Started
 
