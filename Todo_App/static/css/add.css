@@ -140,4 +140,9 @@ p {
         width: 40%;
         margin: 0%;
     }
+
+    .details {
+        margin-left: 5%;
+        width: 90%;
+    }
 }
